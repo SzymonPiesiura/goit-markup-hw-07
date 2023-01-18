@@ -21,39 +21,43 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="bottom-line">
-      <nav class="container site-nav flex-nav-container">
-        <div class="flex-logo-nav">
+    <!--Header-->
+
+    <header class="header">
+      <nav class="container header__nav">
+        <div class="header__nav--flex">
           <div>
             <a class="logo" href="index.html">
-              <span class="logo-color">Web</span>Studio
+              <span class="logo__color">Web</span>Studio
             </a>
           </div>
           <nav>
-            <ul class="navigation-list">
+            <ul class="header__nav-list">
               <li>
-                <a class="navigation navigation-active" href="index.html"
+                <a
+                  class="header__nav-link header__nav-link--active"
+                  href="index.html"
                   >Agencja</a
                 >
               </li>
               <li>
-                <a class="navigation" href="portfolio.html">Porftolio</a>
+                <a class="header__nav-link" href="portfolio.html">Porftolio</a>
               </li>
               <li>
-                <a class="navigation" href="#">Kontakt</a>
+                <a class="header__nav-link" href="#">Kontakt</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="contact-nav">
-          <a class="link-contact" href="mailto:info@devstudio.com">
-            <svg class="icon-header" width="16px" height="12px">
+        <div class="header__contact">
+          <a class="header__contact-link" href="mailto:info@devstudio.com">
+            <svg class="header__link-icon" width="16px" height="12px">
               <use href="images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
-          <a class="link-contact" href="tel:+48111111111"
-            ><svg class="icon-header" width="16px" height="16px">
+          <a class="header__contact-link" href="tel:+48111111111"
+            ><svg class="header__link-icon" width="16px" height="16px">
               <use href="images/icons.svg#icon-smartphone"></use>
             </svg>
             +48 111 111 111
@@ -61,6 +65,9 @@
         </div>
       </nav>
     </header>
+
+    <!--Hero-section-->
+
     <main>
       <section class="main-box">
         <div class="marketing-slogan">
@@ -68,6 +75,9 @@
           <button class="button-order" data-modal-open>Zamów Usługe</button>
         </div>
       </section>
+
+      <!--Our-atuts-->
+
       <section>
         <ul class="container container-text">
           <li class="text-content">
@@ -124,6 +134,9 @@
           </li>
         </ul>
       </section>
+
+      <!--What-we-do-->
+
       <section class="container image-content">
         <h2 class="title-image">Czym się zajmujemy</h2>
         <ul class="container-image">
@@ -162,6 +175,9 @@
           </li>
         </ul>
       </section>
+
+      <!--Our-team-->
+
       <section class="team-section">
         <div class="container team-container">
           <h2 class="title-image">Nasz Zespół</h2>
@@ -297,6 +313,9 @@
           </ul>
         </div>
       </section>
+
+      <!--Our-customers-->
+
       <section>
         <div class="container company-container">
           <h2 class="title-image team-container">Nasi Klienci</h2>
@@ -359,6 +378,9 @@
         </div>
       </section>
     </main>
+
+    <!--Footer-->
+
     <footer class="footer-box">
       <address class="container footer-nav flex-footer-container">
         <div>
@@ -426,6 +448,9 @@
         </div>
       </address>
     </footer>
+
+    <!--Modal-window-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>

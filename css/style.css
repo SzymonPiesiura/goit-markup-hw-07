@@ -13,11 +13,14 @@ body {
 
 /* Navigation Start Position */
 
-.site-nav {
+.header__nav {
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.bottom-line {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -26,32 +29,26 @@ body {
   margin: 0 auto;
 }
 
-.flex-nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex-logo-nav {
+.header__nav--flex {
   display: flex;
   align-items: center;
 }
 
-.navigation-list {
+.header__nav-list {
   display: flex;
   padding: 0;
   list-style: none;
   margin-left: 93px;
 }
 
-.navigation-list li {
+.header__nav-list li {
   margin: 0 23px;
 }
 
-.contact-nav a {
+.header__contact a {
   margin: 0 25px 0 10px;
 }
-.contact-nav {
+.header__contact {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -77,11 +74,11 @@ body {
   color: #000000;
 }
 
-.logo-color {
+.logo__color {
   color: #2196f3;
 }
 
-.navigation {
+.header__nav-link {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.15;
@@ -94,7 +91,7 @@ a {
   text-decoration: none;
 }
 
-.link-contact {
+.header__contact-link {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.15;
@@ -108,10 +105,10 @@ a {
   color: #757575;
 }
 
-.navigation:hover,
-.navigation:focus,
-.link-contact:focus,
-.link-contact:hover {
+.header__nav-link:hover,
+.header__nav-link:focus,
+.header__contact-link:focus,
+.header__contact-link:hover {
   color: #2196f3;
   fill: #2196f3;
   transition-property: color, fill;
@@ -119,7 +116,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-active::after {
+.header__nav-link--active::after {
   background-color: #2196f3;
   content: "";
   position: absolute;
@@ -130,7 +127,7 @@ a {
   left: 0;
 }
 
-.navigation-active {
+.header__nav-link--active {
   color: #2196f3;
 }
 
@@ -438,16 +435,16 @@ a {
   transform: translateY(0%);
 }
 
-.link-contact:focus .icon-header,
-.link-contact:hover .icon-header,
-.link-contact:active .icon-header {
+.header__contact-link:focus .header__link-icon,
+.header__contact-link:hover .header__link-icon,
+.header__contact-link:active .header__link-icon {
   fill: #2196f3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-header {
+.header__link-icon {
   fill: #757575;
 }
 
