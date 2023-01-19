@@ -1,0 +1,47 @@
+.social {
+  &__icon-flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__icon-button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $icon-color;
+    margin-top: 20px;
+  }
+
+  &__icon-button:active,
+  &__icon-button:hover,
+  &__icon-button:focus {
+    border-radius: 50%;
+    background-color: $primary-color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+  }
+
+  &__icon-button:hover .team__icon,
+  &__icon-button:active .team__icon,
+  &__icon-button:focus .team__icon {
+    fill: $white-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--white {
+    
+  }
+}

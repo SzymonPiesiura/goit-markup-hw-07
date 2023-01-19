@@ -56,7 +56,7 @@ body {
 
 /* Navigation End Position */
 
-.main-box {
+.hero {
   background-image: url("../images/color_home.png"),
     url("../images/background_home.jpg");
   background-position: center;
@@ -98,7 +98,7 @@ a {
   color: #757575;
 }
 
-.link-contact-footer {
+.footer__link--style {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.15;
@@ -131,13 +131,13 @@ a {
   color: #2196f3;
 }
 
-.marketing-slogan {
+.hero__slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.title-main {
+.hero__title {
   font-weight: 900;
   font-size: 2.75rem;
   line-height: 1.36;
@@ -150,7 +150,7 @@ a {
   margin-top: 200px;
 }
 
-.button-order {
+.hero__button {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.87;
@@ -173,7 +173,7 @@ a {
   transform: scale(1.05);
 }
 
-.container-text {
+.atuts {
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -181,7 +181,7 @@ a {
   gap: 30px;
 }
 
-.text-marketing {
+.atuts__text {
   font-size: 0.875rem;
   line-height: 1.7;
   color: #757575;
@@ -191,7 +191,7 @@ a {
   height: 75px;
 }
 
-.title-marketing {
+.atuts__title {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.15;
@@ -199,7 +199,7 @@ a {
   text-transform: uppercase;
 }
 
-.image-content {
+.our-work {
   margin-top: 94px;
 }
 
@@ -210,7 +210,7 @@ a {
   text-align: center;
 }
 
-.container-image {
+.our-work__container {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -218,7 +218,7 @@ a {
   padding: 0%;
 }
 
-.team-section {
+.team {
   height: 708px;
   background: #f5f4fa;
   margin-top: 94px;
@@ -228,14 +228,21 @@ a {
   padding-top: 94px;
 }
 
-.team-box {
+.team__box {
   display: flex;
   list-style: none;
   margin-top: 50px;
   gap: 30px;
 }
 
-.name-worker {
+.customer__box {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.team__name {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.18;
@@ -250,7 +257,7 @@ a {
   margin-top: 30px;
 }
 
-.department-worker {
+.team__departament {
   font-size: 1rem;
   line-height: 1.18;
   color: #757575;
@@ -271,17 +278,18 @@ a {
   top: -5px;
 }
 
-.address {
+.footer__address--style {
   font-size: 0.875rem;
   line-height: 1.71;
   color: #ffffff;
 }
 
-.footer-box {
+.footer {
   background: #2f303a;
+  height: 252px;
 }
 
-.logo-footer {
+.logo--white {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 1.625rem;
@@ -321,18 +329,18 @@ a {
   justify-content: center;
   margin-top: 94px;
 }
-.text-content {
+.atuts__content {
   margin-right: 30px;
 }
 
-.image-box {
+.our-work__image {
   width: 370px;
   height: 294px;
   position: relative;
   z-index: 4;
 }
 
-.title-box-name {
+.our-work__title-box {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
@@ -344,12 +352,12 @@ a {
   align-items: center;
 }
 
-.tile-box-name-style {
+.our-work__title {
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.image-box-team {
+.team__image {
   width: 270px;
   height: 428px;
   background: #ffffff;
@@ -360,19 +368,15 @@ a {
   flex-direction: column;
 }
 
-.footer-nav {
-  height: 252px;
-}
-
-.flex-footer-container {
+.footer__flex {
   display: flex;
 }
 
-.logo-footer-container {
+.footer__logo-box {
   margin-top: 60px;
 }
 
-.address-footer {
+.footer__address {
   margin-top: 20px;
   gap: 9px;
   display: flex;
@@ -448,11 +452,11 @@ a {
   fill: #757575;
 }
 
-.icon-box {
+.atuts__icon {
   width: 70px;
 }
 
-.icon-box-style {
+.atuts__icon-box {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -462,7 +466,7 @@ a {
   margin-bottom: 30px;
 }
 
-.icon-box-company {
+.customer__icon-box {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -472,45 +476,45 @@ a {
   align-items: center;
 }
 
-.company-container {
+.customer {
   margin-bottom: 94px;
 }
 
-.icon-company-flex {
+.customer__icon-flex {
   width: 106px;
   height: 60px;
   display: flex;
   fill: #757575;
 }
 
-.icon-box-company:hover,
-.icon-box-company:focus,
-.icon-box-company:active {
+.customer__icon-box:hover,
+.customer__icon-box:focus,
+.customer__icon-box:active {
   border: 1px solid #2196f3;
   fill: #2196f3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-box-company:hover .icon-company,
-.icon-box-company:focus .icon-company,
-.icon-box-company:active .icon-company {
+.customer__icon-box:hover .customer__icon,
+.customer__icon-box:focus .customer__icon,
+.customer__icon-box:active .customer__icon {
   fill: #2196f3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon {
+.footer__icon {
   display: flex;
 }
 
-.footer-icon-flex {
+.footer__icon--flex {
   display: flex;
   gap: 10px;
 }
 
-.team-icon-flex {
+.social__icon-flex {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -522,7 +526,7 @@ a {
   fill: #ffffff;
 }
 
-.icon-social-media-button {
+.social__icon-button {
   width: 44px;
   height: 44px;
   display: flex;
@@ -533,9 +537,9 @@ a {
   margin-top: 20px;
 }
 
-.icon-social-media-button:hover,
-.icon-social-media-button:active,
-.icon-social-media-button:focus {
+.social__icon-button:hover,
+.social__icon-button:active,
+.social__icon-button:focus {
   border-radius: 50%;
   background-color: #2196f3;
   transition-property: background-color;
@@ -543,7 +547,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-icon-social {
+.footer__icon-box {
   display: flex;
   flex-direction: column;
   margin-top: 72px;
@@ -552,7 +556,7 @@ a {
   height: 80px;
 }
 
-.icon-text {
+.footer__text {
   color: #ffffff;
   text-transform: uppercase;
   font-style: normal;
@@ -562,15 +566,21 @@ a {
   letter-spacing: 0.03em;
 }
 
-.icon-social-media-team {
+.social__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
 }
 
-.icon-social-media-button:hover .icon-social-media-team,
-.icon-social-media-button:active .icon-social-media-team,
-.icon-social-media-button:focus .icon-social-media-team {
+.social__icon--white {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.social__icon-button:hover .social__icon,
+.social__icon-button:active .social__icon,
+.social__icon-button:focus .social__icon {
   fill: #ffffff;
   transition-property: fill;
   transition-duration: 250ms;
@@ -770,12 +780,12 @@ a {
   border-color: #2196f3;
 }
 
-.newsletter-box {
+.footer__newsletter {
   margin-top: 72px;
   margin-left: 78px;
 }
 
-.newsletter-footer {
+.footer__newsletter-label {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -785,7 +795,7 @@ a {
   padding: 15px 16px;
 }
 
-.newsletter-button {
+.footer__newsletter-button {
   display: block;
   display: flex;
   justify-content: center;
@@ -804,7 +814,7 @@ a {
   border-radius: 4px;
 }
 
-.newsletter-flex {
+.footer__newsletter--flex {
   display: flex;
   align-items: center;
   margin-top: 20px;
