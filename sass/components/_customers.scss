@@ -8,6 +8,10 @@
     gap: 30px;
   }
 
+  &__icon {
+    fill: $icon-color;
+  }
+
   &__icon-box {
     width: 170px;
     height: 92px;

@@ -14,39 +14,41 @@
     <title>WebStudio-Portfolio</title>
   </head>
   <body>
-    <header class="bottom-line">
-      <nav class="container site-nav flex-nav-container">
-        <div class="flex-logo-nav">
+    <header class="header">
+      <nav class="container header__nav">
+        <div class="header__nav--flex">
           <div>
             <a class="logo" href="index.html">
-              <span class="logo-color">Web</span>Studio
+              <span class="logo__color">Web</span>Studio
             </a>
           </div>
           <nav>
-            <ul class="navigation-list">
+            <ul class="header__nav-list">
               <li>
-                <a class="navigation" href="index.html">Agencja</a>
-              </li>
-              <li>
-                <a class="navigation navigation-active" href="portfolio.html"
-                  >Porftolio</a
+                <a
+                  class="header__nav-link header__nav-link--active"
+                  href="index.html"
+                  >Agencja</a
                 >
               </li>
               <li>
-                <a class="navigation" href="#">Kontakt</a>
+                <a class="header__nav-link" href="portfolio.html">Porftolio</a>
+              </li>
+              <li>
+                <a class="header__nav-link" href="#">Kontakt</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="contact-nav">
-          <a class="link-contact" href="mailto:info@devstudio.com">
-            <svg class="icon-header" width="16px" height="12px">
+        <div class="header__contact">
+          <a class="header__contact-link" href="mailto:info@devstudio.com">
+            <svg class="header__link-icon" width="16px" height="12px">
               <use href="images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
-          <a class="link-contact" href="tel:+48111111111"
-            ><svg class="icon-header" width="16px" height="16px">
+          <a class="header__contact-link" href="tel:+48111111111"
+            ><svg class="header__link-icon" width="16px" height="16px">
               <use href="images/icons.svg#icon-smartphone"></use>
             </svg>
             +48 111 111 111
@@ -54,210 +56,230 @@
         </div>
       </nav>
     </header>
+
     <main>
+      <!--Portfolio-button-->
       <section class="container">
         <div>
-          <ul class="button-portfolio-flex">
+          <ul class="portfolio-button">
             <li>
-              <button class="button-portfolio" type="button">Wszystkie</button>
+              <button class="portfolio-button__style" type="button">
+                Wszystkie
+              </button>
             </li>
             <li>
-              <button class="button-portfolio" type="button">Strony</button>
+              <button class="portfolio-button__style" type="button">
+                Strony
+              </button>
             </li>
             <li>
-              <button class="button-portfolio" type="button">Aplikacje</button>
+              <button class="portfolio-button__style" type="button">
+                Aplikacje
+              </button>
             </li>
             <li>
-              <button class="button-portfolio" type="button">Dizajn</button>
+              <button class="portfolio-button__style" type="button">
+                Dizajn
+              </button>
             </li>
             <li>
-              <button class="button-portfolio" type="button">Marketing</button>
+              <button class="portfolio-button__style" type="button">
+                Marketing
+              </button>
             </li>
           </ul>
         </div>
+
+        <!--Portfolio-->
+
         <div>
-          <ul class="image-portfolio">
-            <li class="image-box-portfolio">
+          <ul class="portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/technocrack.jpg"
                 width="370"
                 height="294"
                 alt="projekt strony internetowej wykonany na zlecenie klienta"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Technocrack</div>
-                <div class="department-class">Strona Internetowa</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Technocrack</div>
+                <div class="portfolio__department">Strona Internetowa</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/graphic_new_orlean.jpg"
                 width="370"
                 height="294"
                 alt="dwóch koszykarzy walczących o piłke"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">
                   Grafika New Orlean vs Golden Star
                 </div>
-                <div class="department-class">Dizajn</div>
+                <div class="portfolio__department">Dizajn</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/restaurant_seafood.jpg"
                 width="370"
                 height="294"
                 alt="logo aplikacji w kształcie ryby"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Restauracja Seafood</div>
-                <div class="department-class">Aplikacja</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Restauracja Seafood</div>
+                <div class="portfolio__department">Aplikacja</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/project_prime.jpg"
                 width="370"
                 height="294"
                 alt="czarne słuchawki nauszne"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Projekt Prime</div>
-                <div class="department-class">Marketing</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Projekt Prime</div>
+                <div class="portfolio__department">Marketing</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/project_boxes.jpg"
                 width="370"
                 height="294"
                 alt="dawa pudełka kartonowe większe w kolorze białym mniejsze w kolorze brązowym"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Projekt Boxes</div>
-                <div class="department-class">Aplikacja</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Projekt Boxes</div>
+                <div class="portfolio__department">Aplikacja</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/inspiration.jpg"
                 width="370"
                 height="294"
                 alt="czarne słuchawki nauszne"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Inspiration has no Borders</div>
-                <div class="department-class">Strona Internetowa</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Inspiration has no Borders</div>
+                <div class="portfolio__department">Strona Internetowa</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/magazine.jpg"
                 width="370"
                 height="294"
                 alt="otwarty magazyn w którym znajdują się akrtyuły dla kobiet"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Magazyn Limited Edition</div>
-                <div class="department-class">Dizajn</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Magazyn Limited Edition</div>
+                <div class="portfolio__department">Dizajn</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/project_lab.jpg"
                 width="370"
                 height="294"
                 alt="biała zawieszka na ciuchy z napisaem lab el tag"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Projekt LAB</div>
-                <div class="department-class">Marketing</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Projekt LAB</div>
+                <div class="portfolio__department">Marketing</div>
               </div>
             </li>
-            <li class="image-box-portfolio">
+            <li class="portfolio__image-box">
               <img
                 src="images/growing_busines.jpg"
                 width="370"
                 height="294"
                 alt="otwarty laptop marki apple z stroną internetową firmy growing business"
               />
-              <div class="portfolio-box-hover"></div>
-              <div class="name-project-box">
-                <div class="name-project">Growing Business</div>
-                <div class="department-class">Aplikacja</div>
+              <div class="portfolio__box-hover"></div>
+              <div class="portfolio__project-name">
+                <div class="portfolio__name">Growing Business</div>
+                <div class="portfolio__department">Aplikacja</div>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer-box">
-      <address class="container footer-nav flex-footer-container">
+
+    <!--Footer-->
+
+    <footer class="footer">
+      <address class="container footer__flex">
         <div>
-          <div class="logo-footer-container">
-            <a class="logo-footer" href="index.html">
-              <span class="logo-color">Web</span>Studio
+          <div class="footer__logo-box">
+            <a class="logo--white" href="index.html">
+              <span class="logo__color">Web</span>Studio
             </a>
           </div>
-          <address class="address-footer">
-            <div class="address">m. Warszawa, Aleje Jerozolimskie 21</div>
-            <a class="link-contact-footer" href="mailto:info@example.com"
+          <address class="footer__address">
+            <div class="footer__address--style">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </div>
+            <a class="footer__link--style" href="mailto:info@example.com"
               >info@example.com
             </a>
-            <a class="link-contact-footer" href="tel:+48111111111"
+            <a class="footer__link--style" href="tel:+48111111111"
               >+48 111 111 111
             </a>
           </address>
         </div>
-        <div class="box-icon-social">
-          <div class="footer-icon">
-            <h3 class="icon-text">Dołącz do nas</h3>
+        <div class="footer__icon-box">
+          <div class="footer__icon">
+            <h3 class="footer__text">Dołącz do nas</h3>
           </div>
-          <div class="footer-icon-flex">
-            <a href="#" class="icon-social-media-button">
-              <svg class="icon-social-media">
+          <div class="footer__icon--flex">
+            <a href="#" class="social__icon-button">
+              <svg class="social__icon--white">
                 <use href="images/icons.svg#icon-instagram" />
               </svg>
             </a>
-            <a href="#" class="icon-social-media-button">
-              <svg class="icon-social-media">
+            <a href="#" class="social__icon-button">
+              <svg class="social__icon--white">
                 <use href="images/icons.svg#icon-twitter" />
               </svg>
             </a>
-            <a href="#" class="icon-social-media-button">
-              <svg class="icon-social-media">
+            <a href="#" class="social__icon-button">
+              <svg class="social__icon--white">
                 <use href="images/icons.svg#icon-facebook" />
               </svg>
             </a>
-            <a href="#" class="icon-social-media-button">
-              <svg class="icon-social-media">
+            <a href="#" class="social__icon-button">
+              <svg class="social__icon--white">
                 <use href="images/icons.svg#icon-linkedin" />
               </svg>
             </a>
           </div>
         </div>
-        <div class="newsletter-box">
-          <h3 class="icon-text">Zapisz się do newslettera</h3>
-          <form class="newsletter-flex">
+        <div class="footer__newsletter">
+          <h3 class="footer__text">Zapisz się do newslettera</h3>
+          <form class="footer__newsletter--flex">
             <label for="newsletter">
               <input
                 id="newsletter"
-                class="newsletter-footer"
+                class="footer__newsletter-label"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="newsletter-button">
+            <button type="submit" class="footer__newsletter-button">
               Zapisz się
               <svg width="24" height="24" class="newsletter-icon">
                 <use href="./images/icons.svg#icon-send"></use>
