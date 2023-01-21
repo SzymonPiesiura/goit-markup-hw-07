@@ -1,8 +1,8 @@
+@extend .container;
+
 .footer {
   background: $navy-blue;
   height: 252px;
-
-  @extend .container;
 
   &__flex {
     display: flex;
