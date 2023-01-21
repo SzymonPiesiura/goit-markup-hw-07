@@ -2,12 +2,13 @@
   height: 708px;
   background: $beige;
   margin-top: 94px;
-  @extend .container;
+
   &__box {
     display: flex;
     list-style: none;
     margin-top: 50px;
     gap: 30px;
+    @extend .container;
   }
 
   &__image {

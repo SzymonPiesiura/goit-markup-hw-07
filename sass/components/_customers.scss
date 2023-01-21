@@ -1,15 +1,18 @@
 .customer {
   margin-bottom: 94px;
-  @extend .container;
+
   &__box {
     display: flex;
     list-style: none;
     margin-top: 50px;
     gap: 30px;
+    @extend .container;
   }
 
   &__icon {
     fill: $icon-color;
+    width: 106px;
+    height: 60px;
   }
 
   &__icon-box {

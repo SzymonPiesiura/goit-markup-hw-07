@@ -1,11 +1,12 @@
 .header {
   border-bottom: 1px solid $border-color;
-  @extend .container;
+
   &__nav {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @extend .container;
   }
 
   &__nav--flex {
