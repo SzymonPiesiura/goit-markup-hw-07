@@ -1,8 +1,6 @@
-@extend .container;
-
 .header {
   border-bottom: 1px solid $border-color;
-
+  @extend .container;
   &__nav {
     height: 80px;
     display: flex;
