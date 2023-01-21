@@ -3,6 +3,8 @@
   background: $beige;
   margin-top: 94px;
 
+  @extend .container;
+
   &__box {
     display: flex;
     list-style: none;

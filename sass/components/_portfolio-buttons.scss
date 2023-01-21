@@ -5,6 +5,8 @@
   justify-content: center;
   margin-top: 94px;
 
+  @extend .container;
+
   &__style {
     font-style: normal;
     font-weight: 500;

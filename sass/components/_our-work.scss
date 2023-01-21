@@ -1,6 +1,8 @@
 .our-work {
   margin-top: 94px;
 
+  @extend .container;
+
   &__container {
     list-style: none;
     display: flex;
